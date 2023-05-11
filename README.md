@@ -63,7 +63,7 @@ The example application implements the following observability concepts.
 
 ### Tracing
 
-The API uses [ActivitySource](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.activitysource) to generate trace spans for each API call and sub-call. The trace spans are linked together to form a trace that represents the entire operation. The API logs the trace and sends it to a backend tracing system, such as [Zipkin](https://zipkin.io/) or [Jaeger](https://www.jaegertracing.io/), for analysis.
+The API uses [ActivitySource](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.activitysource) to generate trace spans for each API call and sub-call. The trace spans are linked together to form a trace that represents the entire operation. The API records the trace which can be collected and sent to a backend system, such as [Zipkin](https://zipkin.io/) or [Jaeger](https://www.jaegertracing.io/), for analysis.
 
 ### Logging
 
